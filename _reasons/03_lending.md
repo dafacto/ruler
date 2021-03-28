@@ -35,7 +35,7 @@ As the current lending term gets closer to expiry, loan holders will increasingl
 
 - Why would a lender ever "deposit" instead of "lending". It seems you'd always lose the current lending APR by depositing?
 
-## Farming
+### Farming
 
 Once a lender's held RC tokens are deposited into the relevant Ruler AMM pool, the receipt pool LP tokens can be staked on the "Farming" page at Ruler, to earn RULER rewards!
 
