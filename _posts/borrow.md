@@ -4,9 +4,7 @@ title: Borrow USD on Ruler
 intro: Without risk of collateral liquidation
 ---
 
-To get a USD loan at Ruler, borrowers deposit collateral, and receive the DAI stablecoin at a loan-to-value ratio specific to the particular collateral asset.
-
-Ruler currently accept BTC, ETH (v1 and v2), COVER, INV and PICKLE as collateral.
+To get a USD loan at Ruler, borrowers deposit collateral, and receive the DAI stablecoin at a loan-to-value ratio specific to the particular collateral asset. Ruler currently accept wide variety of collateral tokens, from mainstream tokens like ETH and WBTC, to innovative newcomers like INV, PICKLE and DEFI5.
 
 Unlike other borrrowing platforms, the user's collateral can not be liquidated if the USD price of the collateral drops.
 
