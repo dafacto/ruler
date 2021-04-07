@@ -1,4 +1,4 @@
-import { getAllPosts } from '../lib/api';
+import { getPosts } from '../lib/api';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
@@ -39,7 +39,7 @@ const Home = ({ posts }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const { posts } = getAllPosts(['number', 'slug', 'title', 'intro']);
+  const posts = getPosts(['number', 'slug', 'title', 'intro']);
 
   return {
     props: { posts },

@@ -16,17 +16,15 @@ const Footer = () => {
         </Button>
         <div className='flex flex-col items-center space-y-6'>
           <ul className='flex space-x-6'>
-            {footerLinks.map(({ name, href }) => {
-              return (
-                <li key={name}>
-                  <Link href={href}>
-                    <a className='block p-2 sm:text-lg hover:text-ruler'>
-                      {name}
-                    </a>
-                  </Link>
-                </li>
-              );
-            })}
+            {footerLinks.map(({ name, href }) => (
+              <li key={name}>
+                <Link href={`/${href}`}>
+                  <a className='block p-2 sm:text-lg hover:text-ruler'>
+                    {name}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <ul className='flex justify-center space-x-6 text-white'>
