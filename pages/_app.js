@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
           site_name: 'Ruler Protocol Explained',
           images: [
             {
-              url: 'https://ruler.fyi/og.png',
+              url: 'https://ruler.fyi/og-image.png',
               width: 1200,
               height: 630,
               alt:

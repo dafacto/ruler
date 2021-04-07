@@ -31,7 +31,12 @@ const Footer = () => {
 
           <ul className='flex justify-center space-x-6 text-white'>
             <li>
-              <a href='#' className='hover:text-ruler'>
+              <a
+                href='https://rulerprotocol.medium.com/'
+                target='_blank'
+                rel='noopener'
+                className='hover:text-ruler'
+              >
                 <span className='sr-only'>Medium</span>
                 <svg
                   className='w-6 h-6 fill-current'
@@ -45,7 +50,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='#' className='hover:text-ruler'>
+              <a
+                href='https://t.me/rulerprotocol'
+                target='_blank'
+                rel='noopener'
+                className='hover:text-ruler'
+              >
                 <span className='sr-only'>Telegram</span>
                 <svg
                   className='w-6 h-6 fill-current'
@@ -61,7 +71,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='#' className='hover:text-ruler'>
+              <a
+                href='https://discord.com/invite/XcAQKg2YGP'
+                target='_blank'
+                rel='noopener'
+                className='hover:text-ruler'
+              >
                 <span className='sr-only'>Discord</span>
                 <svg
                   className='w-6 h-6 fill-current'
@@ -75,7 +90,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='#' className='hover:text-ruler'>
+              <a
+                href='https://github.com/Ruler-Protocol'
+                target='_blank'
+                rel='noopener'
+                className='hover:text-ruler'
+              >
                 <span className='sr-only'>Github</span>
                 <svg
                   className='w-6 h-6 fill-current'
@@ -87,7 +107,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href='#' className='hover:text-ruler'>
+              <a
+                href='https://twitter.com/RulerProtocol'
+                target='_blank'
+                rel='noopener'
+                className='hover:text-ruler'
+              >
                 <span className='sr-only'>Twitter</span>
                 <svg
                   className='w-6 h-6 fill-current'
