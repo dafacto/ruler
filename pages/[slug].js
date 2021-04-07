@@ -1,11 +1,11 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import PostsScroller from '../components/PostsScroller';
-import { getPostBySlug, getAllPosts } from '../lib/api';
+import { getPosts, getPages, getBySlug } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
 import { NextSeo } from 'next-seo';
 
-const Post = ({ post, posts, pages }) => {
+const Post = ({ post, posts }) => {
   const { number, title, intro, content } = post;
 
   return (
@@ -16,11 +16,11 @@ const Post = ({ post, posts, pages }) => {
         <Header.SubHeading>{intro}</Header.SubHeading>
       </Header>
       <main
-        className='px-4 py-16 mx-auto prose md:py-24 sm:py-20 sm:prose-lg sm:px-6 md:px-0'
+        className='px-6 py-8 mx-auto prose sm:py-16 sm:prose-lg'
         dangerouslySetInnerHTML={{ __html: content }}
       />
       {number && <PostsScroller posts={posts} />}
-      <Footer links={pages} />
+      <Footer />
     </>
   );
 };
@@ -28,15 +28,10 @@ const Post = ({ post, posts, pages }) => {
 export default Post;
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
-    'number',
-    'title',
-    'intro',
-    'content',
-  ]);
+  const post = getBySlug(params.slug, ['number', 'title', 'intro', 'content']);
   const content = await markdownToHtml(post.content || '');
 
-  const { posts, pages } = getAllPosts(['number', 'slug', 'title', 'intro']);
+  const posts = getPosts(['number', 'slug', 'title', 'intro']);
 
   return {
     props: {
@@ -45,21 +40,21 @@ export async function getStaticProps({ params }) {
         content,
       },
       posts,
-      pages,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const { posts, pages } = getAllPosts(['slug']);
+  const posts = getPosts(['slug']);
+  const pages = getPages(['slug']);
 
-  const allPosts = posts.concat(pages);
+  const all = posts.concat(pages);
 
   return {
-    paths: allPosts.map((post) => {
+    paths: all.map((item) => {
       return {
         params: {
-          slug: post.slug,
+          slug: item.slug,
         },
       };
     }),

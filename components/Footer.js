@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer className='relative text-center text-white'>
       <Ruler />
-      <div className='flex flex-col items-center px-4 pt-16 pb-8 space-y-6 text-center sm:px-0 sm:space-y-12 md:pt-24 sm:pt-20'>
-        <h3 className='block text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl'>
+      <div className='flex flex-col items-center px-4 pt-16 pb-8 space-y-6 text-center sm:px-0 sm:space-y-12 sm:pt-16'>
+        <h3 className='block text-2xl font-extrabold tracking-tight sm:text-3xl'>
           Ready to get started with Ruler?
         </h3>
         <Button external={true} href='https://app.rulerprotocol.com/'>
@@ -16,17 +16,15 @@ const Footer = () => {
         </Button>
         <div className='flex flex-col items-center space-y-6'>
           <ul className='flex space-x-6'>
-            {footerLinks.map(({ name, href }) => {
-              return (
-                <li key={name}>
-                  <Link href={href}>
-                    <a className='block p-2 sm:text-lg hover:text-ruler'>
-                      {name}
-                    </a>
-                  </Link>
-                </li>
-              );
-            })}
+            {footerLinks.map(({ name, href }) => (
+              <li key={name}>
+                <Link href={`/${href}`}>
+                  <a className='block p-2 sm:text-lg hover:text-ruler'>
+                    {name}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <ul className='flex justify-center space-x-6 text-white'>

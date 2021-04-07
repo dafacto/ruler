@@ -40,10 +40,7 @@ const PostsScroller = ({ posts }) => {
           </li>
         );
       })}
-      <li
-        aria-hidden='true'
-        className='flex-shrink-0 block w-4 sm:w-6 md:-w8'
-      />
+      <li aria-hidden='true' className='flex-shrink-0 block w-1' />
     </ol>
   );
 };
