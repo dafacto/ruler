@@ -16,7 +16,7 @@ const Post = ({ post, posts }) => {
         <Header.SubHeading>{intro}</Header.SubHeading>
       </Header>
       <main
-        className='px-4 py-16 mx-auto prose md:py-24 sm:py-20 sm:prose-lg sm:px-6 md:px-0'
+        className='px-6 py-8 mx-auto prose sm:py-16 sm:prose-lg'
         dangerouslySetInnerHTML={{ __html: content }}
       />
       {number && <PostsScroller posts={posts} />}

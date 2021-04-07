@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Heading = ({ children }) => {
   return (
-    <h2 className='text-base font-bold text-white sm:text-2xl'>{children}</h2>
+    <h2 className='text-base font-bold text-white sm:text-xl'>{children}</h2>
   );
 };
 
@@ -13,7 +13,7 @@ Heading.propTypes = {
 };
 
 const Text = ({ children }) => {
-  return <p className='text-sm text-gray-400 sm:text-lg'>{children}</p>;
+  return <p className='text-sm text-gray-400 sm:text-base'>{children}</p>;
 };
 
 Text.propTypes = {
@@ -25,15 +25,23 @@ const Card = ({ href, number, additionalClasses, active, children }) => {
     <Link href={href}>
       <a
         className={cx(
-          'flex-shrink-0 flex h-full max-w-sm px-4 py-4 sm:py-10 mx-auto space-x-5 transition transform border rounded-lg sm:space-x-8 sm:px-10 border-ruler md:max-w-none hover:ring-2 ring-ruler border-opacity-50',
+          'relative flex-shrink-0 flex flex-col items-center h-full max-w-xs sm:max-w-sm md:max-w-none p-8 pt-10 sm:p-10 sm:pt-12 mx-auto transition rounded-lg group hover:ring-2 ring-ruler border-opacity-50 bg-gray-900',
           { 'ring-2': active },
           additionalClasses
         )}
       >
-        <div className='text-2xl font-extrabold sm:text-3xl text-ruler'>
+        <div
+          className={cx(
+            'absolute flex items-center justify-center w-12 h-12 -top-6 text-xl font-extrabold tracking-normal transition border-2 rounded-full border-ruler',
+            { 'bg-ruler text-gray-900': active },
+            {
+              'bg-gray-900 text-ruler group-hover:text-gray-900 group-hover:bg-ruler': !active,
+            }
+          )}
+        >
           {number}
         </div>
-        <div className='space-y-3 sm:space-y-5'>{children}</div>
+        <div className='space-y-3 text-center'>{children}</div>
       </a>
     </Link>
   );
