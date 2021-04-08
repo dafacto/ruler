@@ -71,7 +71,6 @@ module.exports = {
       colors: {
         gray: colors.trueGray,
         ruler: '#F07651',
-        'ruler-light': '#F9AC94',
       },
     },
   },
