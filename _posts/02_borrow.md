@@ -4,15 +4,17 @@ title: Borrow USD on Ruler
 intro: Without risk of collateral liquidation
 ---
 
-To get a USD loan at Ruler, borrowers deposit collateral, and receive the DAI stablecoin at a loan-to-value ratio specific to the particular collateral asset. Ruler currently accept wide variety of collateral tokens, from mainstream tokens like ETH and WBTC, to innovative newcomers like INV, PICKLE and DEFI5.
+To get a loan at Ruler, borrowers **deposit collateral and receive DAI stablecoins** in an amount corresponding to the collateral asset's particular loan-to-value ratio. Ruler accepts a wide variety of collateral, from mainstream assets like ETH and WBTC, to newcomers like INV, PICKLE and DEFI5.
 
-Unlike other borrrowing platforms, the user's collateral can not be liquidated if the USD price of the collateral drops.
+Unlike other borrrowing platforms, the user's collateral **can not be liquidated** if the USD price of the collateral drops.
 
-To provide for this feature, the loan has a fixed duration term, which is usually about one month. If the user does not repay on time, their loan is considered in default, and they forfeit their collateral.
+Loans have a **fixed duration term**, which is usually about one month. If the user does not repay on time, their loan is considered in default, and they forfeit their collateral.
 
-The interest rate of the loan is market-driven and dynamic, but fixed for the full term at the moment the loan is issued.
+The **interest rate of the loan is market-driven** and dynamic, but fixed for the full term at the moment the loan is issued.
 
 ### How to get a loan
+
+Following is the nitty-gritty of how the Ruler borrowing and repayment mechanisms work:
 
 1. **Deposit collateral** — When you deposit collateral, Ruler creates (mints) equal amounts of two tokens for you, "RC" and "RR" tokens. The RR token represents your collateral, and the RC token represents your debt. As an example, say you deposited $200 worth of WBTC. Ruler may mint 100 RC and RR tokens for you, in which case the 100 RC tokens represent $100 of debt, based on a 2-to-1 collateral ratio for WBTC.
 2. **Receive DAI** — Ruler then automatically "sells" your RC tokens into a "liquidity pool" for DAI on your behalf, and provides this DAI to your wallet. The current RC-DAI "price" at that moment determines your "interest rate", and the amount of interest you'll pay. For example, if the price of RC tokens happens to be $0.98, your 100 RC tokens will purchase 98 DAI. This loss of 2 DAI, is your total "interest" (since your debt is 100 DAI). On a one-month laon, that works out to an annual interest rate about 24%. The current rate is always displayed on the Ruler website.
