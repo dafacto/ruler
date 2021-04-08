@@ -16,9 +16,5 @@ Yes. Since the Ruler platform is operated by smart contracts on the Ethereum net
 
 “Put options” provide protection against downside movement of an asset’s price. In the case that the value of your collateral were to collapse, as a borrower you could always choose not to repay your loan, keeping the loan proceeds. This downside protection against a fall in your collateral value is effectively a put option.
 
-- **Someone said my loan has a “built-in put option”. What does that mean?**
-
-“Put options” provide protection against downside movement of an asset’s price. In the case that the value of your collateral were to collapse, as a borrower you could always choose not to repay your loan, keeping the loan proceeds. This downside protection against a fall in your collateral value is effectively a put option.
-
 
 Finally, let's have a look at some [helpful resources to get you started](/resources/)!
