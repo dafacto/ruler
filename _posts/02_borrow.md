@@ -16,7 +16,8 @@ The **interest rate of the loan is market-driven** and dynamic, but fixed for th
 
 Following is the nitty-gritty of how the Ruler borrowing and repayment mechanisms work:
 
-1. **Deposit collateral** — When you deposit collateral, Ruler creates (mints) equal amounts of two tokens for you, "RC" and "RR" tokens. The RR token represents your collateral, and the RC token represents your debt. As an example, say you deposited $200 worth of WBTC. Ruler may mint 100 RC and RR tokens for you, in which case the 100 RC tokens represent $100 of debt, based on a 2-to-1 collateral ratio for WBTC.
+1. **Deposit collateral** — When you deposit collateral, Ruler creates (mints) equal amounts of two tokens for you, "**RC**" and "**RR**" tokens. 
+  The RR token represents your collateral, and the RC token represents your debt. As an example, say you deposited $200 worth of WBTC. Ruler may mint 100 RC and RR tokens for you, in which case the 100 RC tokens represent $100 of debt, based on a 2-to-1 collateral ratio for WBTC.
 2. **Receive DAI** — Ruler then automatically "sells" your RC tokens into a "liquidity pool" for DAI on your behalf, and provides this DAI to your wallet. The current RC-DAI "price" at that moment determines your "interest rate", and the amount of interest you'll pay. For example, if the price of RC tokens happens to be $0.98, your 100 RC tokens will purchase 98 DAI. This loss of 2 DAI, is your total "interest" (since your debt is 100 DAI). On a one-month laon, that works out to an annual interest rate about 24%. The current rate is always displayed on the Ruler website.
 
 This may seem complicated, since we've described the mechanics, but in this simple example, you've effectively deposited $200 worth of WBTC, received a 100 DAI loan, on which you owe (and have pre-paid) a total of 2 DAI in interest, netting 98 DAI in your wallet for your usage.
