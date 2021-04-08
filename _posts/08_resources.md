@@ -16,7 +16,7 @@ intro: Essential resources of the Ruler ecosystem.
 ### Network Resources
 
 - [RULER Token](https://etherscan.io/token/0x2aECCB42482cc64E087b6D2e5Da39f5A7A7001f8)
-- [RULER trading at SushiSwap](link)
+- [RULER trading at SushiSwap](https://app.sushi.com/swap)
 
 ### Other Resources
 
