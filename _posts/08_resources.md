@@ -21,7 +21,7 @@ intro: Essential resources of the Ruler ecosystem.
 
 ### Other Resources
 
-- [Insurance at Cover](https://app.coverprotocol.com/app/marketplace/protocols/RULER)
+- [Coverage at Cover](https://app.coverprotocol.com/app/marketplace/protocols/RULER)
 
 ### Press
 

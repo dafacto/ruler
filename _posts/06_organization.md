@@ -5,7 +5,7 @@ title: About the Ruler Project
 intro: Vision, innovation and capability
 ---
 
-The Ruler project was founded by the same team that founded and operate the **Cover Protocol** peer-to-peer [insurance platform](https://app.coverprotocol.com/). Although anonymous, the team has a demonstrated track record of innovative vision and technical capability necessary to develop and operate a secure DeFi financial platform.
+The Ruler project was founded by the same team that founded and operate the **Cover Protocol** peer-to-peer [coverage platform](https://app.coverprotocol.com/). Although anonymous, the team has a demonstrated track record of innovative vision and technical capability necessary to develop and operate a secure DeFi financial platform.
 
 As testiment to the credibility of the team, highly-regard crypto participant “Sifu” made a one million USD investment into the project, in March of 2021.
 
