@@ -9,7 +9,7 @@ const Home = ({ posts }) => {
       <Header>
         <div className='pb-3 sm:pb-5'>
           <span className='text-lg font-medium tracking-wide sm:text-xl md:text-2xl sm:font-semibold text-ruler'>
-            A Beginner's Guide to
+            A Beginner’s Guide to
           </span>
         </div>
         <Header.H1>Ruler Protocol</Header.H1>
