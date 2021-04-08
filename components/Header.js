@@ -1,4 +1,3 @@
-import Ruler from './Ruler';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,7 +19,7 @@ const SubHeading = ({ children }) => {
 
 const Header = ({ children }) => {
   return (
-    <header className='relative px-6 py-10 text-center text-white sm:py-16'>
+    <header className='relative px-6 pt-10 text-center text-white sm:pb-10 sm:pt-16'>
       <Link href='/'>
         <a className='relative block h-6 mx-auto mb-12 sm:h-8 w-28 sm:w-40 sm:mb-16 md:mb-20'>
           <Image layout='fill' src='/logo.png' alt='Ruler' />

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Heading = ({ children }) => {
   return (
-    <h2 className='text-base font-bold text-white sm:text-xl'>{children}</h2>
+    <h2 className='text-lg font-bold text-white sm:text-xl'>{children}</h2>
   );
 };
 
@@ -13,7 +13,7 @@ Heading.propTypes = {
 };
 
 const Text = ({ children }) => {
-  return <p className='text-sm text-gray-400 sm:text-base'>{children}</p>;
+  return <p className='text-gray-400'>{children}</p>;
 };
 
 Text.propTypes = {
