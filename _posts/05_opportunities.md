@@ -1,5 +1,6 @@
 ---
 number: 5
+slug: opportunities
 title: Special Opportunities
 intro: Interesting earning opportunities arising from market dynamics
 ---

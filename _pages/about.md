@@ -1,4 +1,5 @@
 ---
+slug: about
 title: About this site
 intro: A Ruler Community Information Project
 ---

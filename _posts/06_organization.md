@@ -1,5 +1,6 @@
 ---
 number: 6
+slug: organization
 title: About the Ruler Project
 intro: Vision, innovation and capability
 ---

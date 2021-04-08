@@ -1,5 +1,6 @@
 ---
 number: 8
+slug: resources
 title: Ruler Protocol Resources
 intro: Essential resources of the Ruler ecosystem.
 ---

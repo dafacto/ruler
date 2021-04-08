@@ -1,5 +1,6 @@
 ---
 number: 1
+slug: ruler
 title: What is Ruler?
 intro: The leader in peer-to-peer, non-liquidatable DeFi credit.
 ---

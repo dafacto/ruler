@@ -1,5 +1,6 @@
 ---
 number: 7
+slug: faqs
 title: Frequently Asked Questions
 intro: You got questions. We got answers.
 ---

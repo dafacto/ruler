@@ -1,5 +1,6 @@
 ---
 number: 3
+slug: lending
 title: Lend USD on Ruler
 intro: Earn interest rate and farming yield
 ---
@@ -34,7 +35,7 @@ To provide liquidity and farm, a lender:
 
 As the current lending term gets closer to expiry, loan holders will increasingly sell their DAI back into the pool for the RC tokens they need to pair with their RR tokens for loan repayment. This should drive the price of RC tokens back towards 1 DAI, such that LP providers can redeem their own RC tokens for 1 DAI each.
 
-### Defaulted loans 
+### Defaulted loans
 
 In the case of defaulted loans, Ruler liquidity providers receive the foreited collateral. Whether this is beneficial or detrimental to LPs, depends on the price of the collateral at the time of expiry. When considering to be a Ruler LP, one must consider the risk that collateral values decline, and borrowers choose to default.
 
